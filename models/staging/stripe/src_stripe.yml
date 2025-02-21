@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: til_portfolio_projects
+    schema: stripe
+    freshness:
+          warn_after: {count: 180, period: day}
+          error_after: {count: 365, period: day}
+    loaded_at_field: _batched_at
+    tables:
+      - name: payment
