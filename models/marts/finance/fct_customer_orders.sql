@@ -56,8 +56,6 @@ with
             customer_orders
             on orders.customer_id = customer_orders.customer_id
 
-
-
     )
 
 -- Simple Select Statement
