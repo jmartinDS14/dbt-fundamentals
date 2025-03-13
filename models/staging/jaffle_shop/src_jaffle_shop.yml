@@ -7,3 +7,14 @@ sources:
     tables:
       - name: customers
       - name: orders
+  
+  - name: jaffle_shop_extended
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+      - name: orders
+      - name: items
+      - name: products
+      - name: stores
+      - name: supplies
