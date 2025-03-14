@@ -9,6 +9,9 @@ models:
         tests:
           - unique
           - not_null
+          - dbt_utils.cardinality_equality:
+              field: customer_id
+              to: ref('stg_jaffle_shop__customers2')
 
   - name: stg_jaffle_shop__orders
     description: Staged order data from our jaffle shop app.
